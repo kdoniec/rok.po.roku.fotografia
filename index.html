@@ -69,8 +69,46 @@
             max-width: 200px;
             height: auto;
         }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 30px;
+            flex-wrap: wrap;
+        }
+        .gallery img {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+        }
         main {
             flex: 1;
+        }
+        .about {
+            padding: 40px 20px;
+            background: #ffffff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .about p {
+            max-width: 800px;
+            margin: auto;
+            line-height: 1.6;
+        }
+        .contact {
+            background: #7a1212;
+            color: white;
+            padding: 30px 20px;
+        }
+        .contact a {
+            color: #ffcc66;
+            text-decoration: none;
+            font-weight: bold;
         }
         footer {
             background: #7a1212;
@@ -102,9 +140,10 @@
     </div>
     
     <main>
-        <section id="about">
+        <section id="about" class="about">
             <h2>O mnie</h2>
-            <p>Cześć! Jestem fotografem specjalizującym się w sesjach rodzinnych i plenerowych.</p>
+            <p>Jestem pasjonatem fotografii, który od lat uwiecznia najpiękniejsze momenty życia. Moja specjalizacja to sesje rodzinne, plenerowe i okolicznościowe. Każda sesja to dla mnie wyjątkowa historia, którą staram się uchwycić w kadrze.</p>
+            <p>Moje zdjęcia cechują się naturalnym światłem, emocjami i subtelną obróbką. Współpraca ze mną to gwarancja komfortowej atmosfery i profesjonalnego podejścia.</p>
         </section>
         
         <section id="gallery">
@@ -114,6 +153,13 @@
                 <img src="images/photo2.png" alt="Zdjęcie 2">
                 <img src="images/photo3.png" alt="Zdjęcie 3">
             </div>
+        </section>
+        
+        <section id="contact" class="contact">
+            <h2>Kontakt</h2>
+            <p>Masz pytania lub chcesz umówić sesję? Skontaktuj się ze mną:</p>
+            <p>Email: <a href="mailto:kontakt@fotografia.pl">kontakt@fotografia.pl</a></p>
+            <p>Telefon: <a href="tel:+48123456789">+48 123 456 789</a></p>
         </section>
     </main>
     

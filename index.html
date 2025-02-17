@@ -5,27 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Fotografa</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Quicksand', sans-serif;
             margin: 0;
             padding: 0;
             text-align: center;
-            background: linear-gradient(to right, #ff7e5f, #feb47b);
+            background: linear-gradient(to right, #ffecd2, #fcb69f);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
         }
         header {
-            background: rgba(34, 34, 34, 0.8);
-            color: white;
-            padding: 20px 30px;
+            background: rgba(255, 180, 150, 0.85);
+            color: black;
+            padding: 15px 30px;
             display: flex;
             align-items: center;
             justify-content: space-between;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
         .logo {
-            max-width: 120px;
+            max-width: 100px;
             height: auto;
+            object-fit: contain;
         }
         nav ul {
             list-style: none;
@@ -37,15 +41,14 @@
             margin: 0 15px;
         }
         nav ul li a {
-            color: white;
+            color: black;
             text-decoration: none;
-            font-weight: bold;
-            font-family: 'Playfair Display', serif;
+            font-weight: 500;
             font-size: 18px;
             transition: color 0.3s;
         }
         nav ul li a:hover {
-            color: #ffdd57;
+            color: #ff5733;
         }
         .gallery {
             display: flex;
@@ -62,18 +65,21 @@
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
         .gallery img:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
             box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
         }
         h1, h2 {
-            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+        }
+        main {
+            flex: 1;
         }
         footer {
-            background: rgba(34, 34, 34, 0.9);
-            color: white;
+            background: rgba(255, 180, 150, 0.85);
+            color: black;
             padding: 15px 0;
-            margin-top: 20px;
             font-size: 14px;
+            margin-top: auto;
         }
     </style>
 </head>
@@ -89,24 +95,21 @@
         </nav>
     </header>
     
-    <section id="about">
-        <h2>O mnie</h2>
-        <p>Cześć! Jestem fotografem specjalizującym się w sesjach rodzinnych i plenerowych.</p>
-    </section>
-    
-    <section id="gallery">
-        <h2>Galeria</h2>
-        <div class="gallery">
-            <img src="images/photo1.png" alt="Zdjęcie 1">
-            <img src="images/photo2.png" alt="Zdjęcie 2">
-            <img src="images/photo3.png" alt="Zdjęcie 3">
-        </div>
-    </section>
-    
-    <section id="contact">
-        <h2>Kontakt</h2>
-        <p>Skontaktuj się ze mną przez Instagram: <a href="https://www.instagram.com/rok.po.roku.fotografia/" target="_blank">@rok.po.roku.fotografia</a></p>
-    </section>
+    <main>
+        <section id="about">
+            <h2>O mnie</h2>
+            <p>Cześć! Jestem fotografem specjalizującym się w sesjach rodzinnych i plenerowych.</p>
+        </section>
+        
+        <section id="gallery">
+            <h2>Galeria</h2>
+            <div class="gallery">
+                <img src="images/photo1.png" alt="Zdjęcie 1">
+                <img src="images/photo2.png" alt="Zdjęcie 2">
+                <img src="images/photo3.png" alt="Zdjęcie 3">
+            </div>
+        </section>
+    </main>
     
     <footer>
         <p>&copy; 2025 Portfolio Fotografa</p>

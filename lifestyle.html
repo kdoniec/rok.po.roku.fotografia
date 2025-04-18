@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sesje Rodzinne – Rok po Roku Fotografia</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script defer src="scripts.js"></script>
+</head>
+<body>
+  <header>
+    <a href="index.html"><img src="logo.png" alt="Rok po Roku logo" /></a>
+    <nav>
+      <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="rodzinna.html">Rodzinna</a>
+        <a href="lifestyle.html">Lifestyle</a>
+        <a href="biznesowa.html">Biznesowa</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <h1>Sesje Rodzinne</h1>
+      <p>Naturalne, ciepłe zdjęcia pełne emocji i bliskości. W domu, w plenerze, tak jak lubicie.</p>
+    </section>
+
+    <section class="gallery">
+      <img src="images/rodzinna1.jpg" alt="Sesja rodzinna 1" onclick="openLightbox(this.src)">
+      <img src="images/rodzinna2.jpg" alt="Sesja rodzinna 2" onclick="openLightbox(this.src)">
+      <img src="images/rodzinna3.jpg" alt="Sesja rodzinna 3" onclick="openLightbox(this.src)">
+    </section>
+
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" src="" alt="powiększone zdjęcie">
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="https://www.instagram.com/rok.po.roku.fotografia/" target="_blank" aria-label="Instagram">
+        <img src="icons/instagram.png" alt="Instagram" width="24" height="24" />
+      </a>
+      <a href="https://www.facebook.com/rokporokufotografia" target="_blank" aria-label="Facebook">
+        <img src="icons/facebook.png" alt="Facebook" width="24" height="24" />
+      </a>
+    </div>
+  </footer>
+  <script>
+  </script>
+</body>
+</html>

@@ -1,170 +1,65 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Fotografa</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Quicksand', sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background: #f8f8f8;
-            display: flex;
-            flex-direction: column;
-            min-height: 100vh;
-        }
-        .top-bar {
-            background: #7a1212;
-            color: white;
-            padding: 10px 0;
-            display: flex;
-            justify-content: flex-end;
-            padding-right: 20px;
-        }
-        .top-bar a {
-            color: white;
-            text-decoration: none;
-            margin-left: 15px;
-            font-size: 18px;
-            transition: color 0.3s;
-        }
-        .top-bar a:hover {
-            color: #ffcc66;
-        }
-        .nav-bar {
-            background: #7a1212;
-            padding: 15px 0;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            display: flex;
-            justify-content: center;
-        }
-        nav ul li {
-            margin: 0 20px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 18px;
-            transition: color 0.3s;
-        }
-        nav ul li a:hover {
-            color: #ffcc66;
-        }
-        .logo-section {
-            background: white;
-            padding: 30px 0;
-            display: flex;
-            justify-content: center;
-        }
-        .logo {
-            max-width: 200px;
-            height: auto;
-        }
-        .gallery {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin: 30px;
-            flex-wrap: wrap;
-        }
-        .gallery img {
-            width: 250px;
-            height: auto;
-            border-radius: 10px;
-            transition: transform 0.3s, box-shadow 0.3s;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
-        .gallery img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
-        }
-        main {
-            flex: 1;
-        }
-        .about {
-            padding: 40px 20px;
-            background: #ffffff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        .about p {
-            max-width: 800px;
-            margin: auto;
-            line-height: 1.6;
-        }
-        .contact {
-            background: #7a1212;
-            color: white;
-            padding: 30px 20px;
-        }
-        .contact a {
-            color: #ffcc66;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        footer {
-            background: #7a1212;
-            color: white;
-            padding: 15px 0;
-            font-size: 14px;
-            margin-top: auto;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rok po Roku Fotografia</title>
+  <script defer src="scripts.js"></script>
+  </script>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="top-bar">
-        <a href="https://www.facebook.com" target="_blank">Facebook</a>
-        <a href="https://www.instagram.com/rok.po.roku.fotografia/" target="_blank">Instagram</a>
+  <header>
+    <a href="index.html"><img src="logo.png" alt="Rok po Roku logo"></a>
+    <nav>
+      <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="rodzinna.html">Rodzinna</a>
+        <a href="lifestyle.html">Lifestyle</a>
+        <a href="biznesowa.html">Biznesowa</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero-text-overlay">
+      <img src="images/hero.jpg" alt="Emocjonalna fotografia rodzinna" class="hero-img">
+      <div class="hero-overlay">
+        <h1>Fotografia, która zatrzymuje czas –<br>rodzinna, naturalna, z sercem</h1>
+      </div>
+    </section>
+
+    <section class="intro">
+      <h1>Fotografia pełna emocji</h1>
+      <p>Jestem Ewa i uwieczniam Wasze najpiękniejsze chwile – naturalnie, ciepło i bez pozowania.</p>
+    </section>
+
+    <section class="portfolio-grid">
+      <a href="rodzinna.html" class="portfolio-tile" style="background-image: url('images/rodzinna1.jpg')"><span>RODZINNA</span></a>
+      <a href="lifestyle.html" class="portfolio-tile" style="background-image: url('images/lifestyle1.jpg')"><span>LIFESTYLE</span></a>
+      <a href="biznesowa.html" class="portfolio-tile" style="background-image: url('images/biznesowa1.png')"><span>BIZNESOWA</span></a>
+    </section>
+
+    <section class="about-split">
+      <div class="about-img">
+        <img src="images/ewa.jpg" alt="Ewa Doniec">
+      </div>
+      <div class="about-text">
+        <h2>O MNIE</h2>
+        <p>Nazywam się Ewa Doniec. Tworzę pełne emocji, autentyczne fotografie,<br>które pozwalają zatrzymać najpiękniejsze momenty i wspomnienia na dłużej.</p>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="social-icons">
+      <a href="https://www.instagram.com/rok.po.roku.fotografia/" target="_blank" aria-label="Instagram">
+        <img src="icons/instagram.png" alt="Instagram" width="24" height="24">
+      </a>
+      <a href="https://www.facebook.com/rokporokufotografia" target="_blank" aria-label="Facebook">
+        <img src="icons/facebook.png" alt="Facebook" width="24" height="24">
+      </a>
     </div>
-    
-    <div class="nav-bar">
-        <nav>
-            <ul>
-                <li><a href="#about">O mnie</a></li>
-                <li><a href="#gallery">Galeria</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-            </ul>
-        </nav>
-    </div>
-    
-    <div class="logo-section">
-        <img src="images/logo.png" alt="Logo Portfolio" class="logo">
-    </div>
-    
-    <main>
-        <section id="about" class="about">
-            <h2>O mnie</h2>
-            <p>Jestem pasjonatem fotografii, który od lat uwiecznia najpiękniejsze momenty życia. Moja specjalizacja to sesje rodzinne, plenerowe i okolicznościowe. Każda sesja to dla mnie wyjątkowa historia, którą staram się uchwycić w kadrze.</p>
-            <p>Moje zdjęcia cechują się naturalnym światłem, emocjami i subtelną obróbką. Współpraca ze mną to gwarancja komfortowej atmosfery i profesjonalnego podejścia.</p>
-        </section>
-        
-        <section id="gallery">
-            <h2>Galeria</h2>
-            <div class="gallery">
-                <img src="images/photo1.png" alt="Zdjęcie 1">
-                <img src="images/photo2.png" alt="Zdjęcie 2">
-                <img src="images/photo3.png" alt="Zdjęcie 3">
-            </div>
-        </section>
-        
-        <section id="contact" class="contact">
-            <h2>Kontakt</h2>
-            <p>Masz pytania lub chcesz umówić sesję? Skontaktuj się ze mną:</p>
-            <p>Email: <a href="mailto:kontakt@fotografia.pl">kontakt@fotografia.pl</a></p>
-            <p>Telefon: <a href="tel:+48123456789">+48 123 456 789</a></p>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; 2025 Portfolio Fotografa</p>
-    </footer>
+  </footer>
 </body>
 </html>

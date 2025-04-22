@@ -35,7 +35,9 @@
     </section>
 
     <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-prev" onclick="event.stopPropagation(); prevImage(event)">‹</button>
         <img id="lightbox-img" src="" alt="powiększone zdjęcie">
+        <button class="lightbox-next" onclick="event.stopPropagation(); nextImage(event)">›</button>
     </div>
 </main>
 
@@ -49,7 +51,5 @@
         </a>
     </div>
 </footer>
-<script>
-</script>
 </body>
 </html>

@@ -280,8 +280,8 @@ p {
 }
 
 .lightbox {
-    display: none;
     position: fixed;
+    display: none;
     z-index: 1000;
     top: 0;
     left: 0;
@@ -290,14 +290,25 @@ p {
     background-color: rgba(0, 0, 0, 0.85);
     justify-content: center;
     align-items: center;
-}
-
-.lightbox img {
+    gap: 20px;
+  }
+  
+  .lightbox button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 20px;
+    user-select: none;
+  }
+  
+  .lightbox img {
     max-width: 90%;
     max-height: 90%;
     border-radius: 4px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
-}
+    box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  }
 
 /* kontakt */
 

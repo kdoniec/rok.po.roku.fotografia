@@ -24,18 +24,20 @@
 
 <main>
     <section class="page-header">
-        <h1>Sesje Rodzinne</h1>
+        <h1>Sesje Biznesowe</h1>
         <p>Naturalne, ciepłe zdjęcia pełne emocji i bliskości. W domu, w plenerze, tak jak lubicie.</p>
     </section>
 
     <section class="gallery">
-        <img src="images/rodzinna1.jpg" alt="Sesja rodzinna 1" onclick="openLightbox(this.src)">
-        <img src="images/rodzinna2.jpg" alt="Sesja rodzinna 2" onclick="openLightbox(this.src)">
-        <img src="images/rodzinna3.jpg" alt="Sesja rodzinna 3" onclick="openLightbox(this.src)">
+        <img src="images/biznesowa1.png" alt="Sesja biznesowa 1" onclick="openLightbox(this.src)">
+        <img src="images/biznesowa2.png" alt="Sesja biznesowa 2" onclick="openLightbox(this.src)">
+        <img src="images/biznesowa3.png" alt="Sesja biznesowa 3" onclick="openLightbox(this.src)">
     </section>
 
     <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <button class="lightbox-prev" onclick="event.stopPropagation(); prevImage(event)">‹</button>
         <img id="lightbox-img" src="" alt="powiększone zdjęcie">
+        <button class="lightbox-next" onclick="event.stopPropagation(); nextImage(event)">›</button>
     </div>
 </main>
 
@@ -49,7 +51,5 @@
         </a>
     </div>
 </footer>
-<script>
-</script>
 </body>
 </html>
